@@ -1,0 +1,48 @@
+packages:
+  linux:
+    pacman:
+      - hyprland #yrpland stuff
+      - hyprlock
+      - brightnessctl
+      - waybar
+      - hyperidle
+      - swww
+      - nwg-look
+      - dunst
+      - nautilus
+      - wofi
+      - wl-clipboard
+      - libreoffice-fresh # apps
+      - nvim
+      - code
+      - flatpak
+      - git
+      - thunderbird
+      - alacritty
+      - obsidian
+      - mpv
+      - yt-dlp
+      - docker
+      - docker-compose
+      - fzf
+      - lazygit
+      - fd
+      - curl
+      - bleachbit
+      - blueman # system stuff
+      - ufw
+      - wireguard-tools
+      - ttf-space-mono-nerd #fonts
+      - otf-font-awesome
+      - ttf-jetbrains-mono-nerd
+  paru:
+      - brave-bin
+      - proton-mail-bin
+      - wlogout
+      - vesktop-bin
+      - synology-drive
+      - mullvad-vpn-bin
+      - catppuccin-gtk-theme-mocha    #themes 
+      - papirus-folders-catppuccin-git   
+  pipx:
+      - exegol

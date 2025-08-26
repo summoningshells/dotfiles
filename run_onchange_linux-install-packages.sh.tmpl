@@ -1,0 +1,10 @@
+{{ if eq .chezmoi.os "linux" -}}
+#!/bin/bash
+# Install paru packages
+sudo paru -S --noconfirm --needed {{ range .packages.linux.paru -}} {{ . | quote }} {{ end -}}
+# Install pipx packages
+sudo pipx ensure --all
+sudo pipx install {{ range .packages.linux.pipx -}} {{ . | quote }} {{ end -}}
+# Install pacman packages
+sudo pacman -S --noconfirm --needed {{ range .packages.linux.pacman -}} {{ . | quote }} {{ end -}}
+{{ end -}}
